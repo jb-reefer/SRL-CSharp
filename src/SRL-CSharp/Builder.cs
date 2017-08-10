@@ -10,13 +10,20 @@ namespace SRL
 
         protected const MethodType METHOD_TYPES_ALLOWED_FOR_CHARACTERS = MethodType.Begin | MethodType.Anchor | MethodType.Group | MethodType.Quantifier | MethodType.Character;
 
-        /** @var string[] RegEx being built. */
-        protected List<string> regEx = new List<string>();
-        /** @var string Raw modifiers to apply on get(). */
-        protected string modifiers = "";
+		/// <summary>
+		/// RegEx being built
+		/// </summary>
+		protected List<string> regEx = new List<string>();
 
-        /** @var int Type of last method, to avoid invalid builds. */
-        protected MethodType lastMethodType = MethodType.Begin;
+		/// <summary>
+		/// Raw modifiers to apply on get()
+		/// </summary>
+		protected string modifiers = "";
+
+		/// <summary>
+		/// Type of last method, to avoid invalid builds.
+		/// </summary>
+		protected MethodType lastMethodType = MethodType.Begin;
 
         protected Dictionary<string, string> modifierMapper = new Dictionary<string, string>
         {

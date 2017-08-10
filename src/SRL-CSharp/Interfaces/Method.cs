@@ -14,17 +14,27 @@ namespace SRL.Interfaces
     /// </summary>
     public abstract class Method
     {
-        /** @var string Contains the original method name (case-sensitive). */
-        protected string Original { get; set; }
+		/// <summary>
+		/// Contains the original method name (case-sensitive).
+		/// </summary>
+		/// <value>The original.</value>
+		protected string Original { get; set; }
 
-        /** @var string Contains the method name to execute. */
-        protected string MethodName { get; set; }
+		/// <summary>
+		/// Contains the method name to execute.
+		/// </summary>
+		protected string MethodName { get; set; }
 
-        /** @var array Contains the parsed parameters to pass on execution. */
-        protected List<object> Parameters { get; set; }
+		/// <summary>
+		/// Contains the parsed parameters to pass on execution.
+		/// </summary>
+		/// <value>The parameters.</value>
+		protected List<object> Parameters { get; set; }
 
-        /** @var int[] Contains all executed callbacks for that method. Helps finding "lost" groups. */
-        private List<int> executedCallbacks = new List<int>();
+        /// <summary>
+        /// Contains all executed callbacks for that method. Helps finding "lost" groups.
+        /// </summary>
+        List<int> executedCallbacks = new List<int>();
 
         protected Method(string original, string methodName)
         {
@@ -64,7 +74,7 @@ namespace SRL.Interfaces
                     //$parameter = $cb;
                 }
             }
-            this.Parameters = parameters;
+            Parameters = parameters;
             return this;
         }
     }
