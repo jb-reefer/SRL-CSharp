@@ -4,9 +4,9 @@ namespace SRL.Language.Helpers
 {
     public class Matcher
     {
-        private static Matcher instance;
+        static Matcher instance;
 
-        private Matcher() { }
+        Matcher() { }
 
         /// <summary>
         /// Get matcher instance. Since this matcher contains static functionality, we'll use a singleton.

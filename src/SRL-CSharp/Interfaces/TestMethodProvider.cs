@@ -17,14 +17,14 @@ namespace SRL.Interfaces
         /// <param name="delimiter">The delimiter to use. Defaults to '/'. If left empty, avoid using modifiers, since they then will be ignored.</param>
         /// <param name="ignoreInvalid">Ignore invalid regular expressions</param>
         /// <returns>The resulting regular expression</returns>
-        public abstract string get(string delimiter = "/", bool ignoreInvalid = false);
+        public abstract string Get(string delimiter = "/", bool ignoreInvalid = false);
         
         /// <summary>
         /// Test if regular expression matches given string
         /// </summary>
         /// <param name="string">The string to validate</param>
         /// <returns>true if the string is matched; otherwise, false</returns>
-        public bool isMatching(string @string)
+        public bool IsMatching(string @string)
         {
             bool result = @string.PregMatch();
             if (!result)

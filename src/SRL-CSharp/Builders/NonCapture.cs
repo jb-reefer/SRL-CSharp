@@ -8,7 +8,9 @@ namespace SRL.Builders
 {
     public class NonCapture : Builder
     {
-        /** @var string Desired non capture group. */
-        protected string group = "(?:{0})";
+		/// <summary>
+		/// Desired non-capture group
+		/// </summary>
+		protected string Group = "(?:{0})";
     }
 }

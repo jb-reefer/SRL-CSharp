@@ -4,7 +4,6 @@ namespace SRL.Language.Helpers
 {
     public class Cache
     {
-        /** @var Builder[] */
         protected static Dictionary<string, Builder> cache = new Dictionary<string, Builder>();
 
         /// <summary>

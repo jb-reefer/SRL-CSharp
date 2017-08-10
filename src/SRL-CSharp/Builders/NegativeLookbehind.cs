@@ -8,7 +8,9 @@ namespace SRL.Builders
 {
     public class NegativeLookbehind : Builder
     {
-        /** @var string Desired lookbehind group. */
-        protected string group = "(?<!{0})";
+		/// <summary>
+		/// Desired lookbehind group
+		/// </summary>
+		protected string Group = "(?<!{0})";
     }
 }

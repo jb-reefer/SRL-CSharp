@@ -50,7 +50,7 @@ namespace SRL.Extensions
         public static bool IsNull<TObject>(this TObject obj)
          where TObject : class
         {
-            return Object.ReferenceEquals(obj, null);
+            return object.ReferenceEquals(obj, null);
         }
 
         /// <summary>

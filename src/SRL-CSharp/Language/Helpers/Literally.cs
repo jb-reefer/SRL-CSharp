@@ -4,8 +4,10 @@ namespace SRL.Language.Helpers
 {
     public class Literally
     {
-        /** @var string The literal string. */
-        protected string @string;
+		/// <summary>
+		/// The literal string
+		/// </summary>
+		protected string @string;
 
         public Literally(string _string)
         {

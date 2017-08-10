@@ -8,8 +8,10 @@ namespace SRL.Builders
 {
     public class Capture : Builder
     {
-        /** @var string Desired match group. */
-        protected string group = "({0})";
+		/// <summary>
+		/// Desired match group
+		/// </summary>
+		protected string Group = "({0})";
 
         /// <summary>
         /// Set name for capture group.
@@ -18,7 +20,7 @@ namespace SRL.Builders
         /// <returns>The group name set</returns>
         public string SetName(string name)
         {
-            return string.Format(group, name);
+            return string.Format(Group, name);
         }
     }
 }

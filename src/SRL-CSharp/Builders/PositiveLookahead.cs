@@ -8,7 +8,9 @@ namespace SRL.Builders
 {
     public class PositiveLookahead : Builder
     {
-        /** @var string Desired lookahead group. */
-        protected string group = "(?={0})";
+		/// <summary>
+		/// Desired lookahead group
+		/// </summary>
+		protected string Group = "(?={0})";
     }
 }

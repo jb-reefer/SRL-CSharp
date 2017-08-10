@@ -8,10 +8,14 @@ namespace SRL.Builders
 {
     public class EitherOf : Builder
     {
-        /** @var string Desired match group. */
-        protected string group = "(?:{0})";
-        
-        /** @var string String to implode with. */
-        protected string implodeString = "|";
+		/// <summary>
+		/// Desired match group
+		/// </summary>
+		protected string Group = "(?:{0})";
+
+		/// <summary>
+		/// String to implode with
+		/// </summary>
+		protected string ImplodeString = "|";
     }
 }

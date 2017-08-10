@@ -8,7 +8,9 @@ namespace SRL.Builders
 {
     public class Optional : Builder
     {
-        /** @var string Desired match group.*/
-        protected string group = "(?:{0})?";
+		/// <summary>
+		/// Desired match group
+		/// </summary>
+		protected string Group = "(?:{0})?";
     }
 }
