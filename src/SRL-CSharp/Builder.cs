@@ -47,7 +47,7 @@ namespace SRL
             Unknown = 31     //0b11111
         }
 
-        public override string get(string delimiter = "/", bool ignoreInvalid = false)
+        public override string Get(string delimiter = "/", bool ignoreInvalid = false)
         {
             throw new NotImplementedException();
         }
